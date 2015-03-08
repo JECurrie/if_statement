@@ -9,26 +9,23 @@
  </head>
 
  <body>
-
- <input id="myInput" type="text" value="test" />
-			
  <button id="stylesChanger">Change the text!</button>
 
  <div id="firstDiv">This is some text</div>
  <script type="text/javascript">
- 
- var newText=document.getElementById("myInput").value;
 
+ var myArray=new Array();
+ myArray[0]="rose";
+ myArray[1]="daisy";
+ console.log(myArray);
 
+ myOtherArray=["rain","sunshine"];
+ myOtherArray.push("snow");
+ myOtherArray.splice(2, 0, "hail", "cloudy");
+ console.log(myOtherArray.length);
  document.getElementById("stylesChanger").onclick=function() {
-
- newText=document.getElementById("myInput").value;
-
- document.getElementById("firstDiv").innerHTML=newText;
-
+ document.getElementById("firstDiv").innerHTML=myArray[1];
  }
-
  </script>
-
  </body>
 </html>
