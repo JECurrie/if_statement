@@ -7,25 +7,20 @@
  <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
  <meta name="viewport" content="width=device-width, initial-scale=1" />
  </head>
-
  <body>
- <button id="stylesChanger">Change the text!</button>
+ 
+   <p>What is the weather?</p>
+   <input id="weather" />
+   <button id="myButton">Submit</button> <script type="text/javascript">
+   document.getElementById("myButton").onclick= function(){
 
- <div id="firstDiv">This is some text</div>
- <script type="text/javascript">
+   if (document.getElementById("weather").value == 1) {
+     alert("x is 1!");
+   } else {
+     alert("x is not 1!"); 
+   }
 
- var myArray=new Array();
- myArray[0]="rose";
- myArray[1]="daisy";
- console.log(myArray);
-
- myOtherArray=["rain","sunshine"];
- myOtherArray.push("snow");
- myOtherArray.splice(2, 0, "hail", "cloudy");
- console.log(myOtherArray.length);
- document.getElementById("stylesChanger").onclick=function() {
- document.getElementById("firstDiv").innerHTML=myArray[1];
- }
+  }
  </script>
  </body>
 </html>
